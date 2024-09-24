@@ -3,9 +3,7 @@ fn main() {
 }
 
 mod tennis_scoring;
-// mod tennis_scoring_tests;
-
-// pub use crate::tennis_scoring::TennisGame;
+mod tennis_scoring_tests;
 
 pub trait TennisGame {
     fn clear(&mut self);
