@@ -1,0 +1,36 @@
+src/tennis_scoring.rs:46:29: replace && with || in TennisGame::get_score
+src/tennis_scoring.rs:40:29: replace > with < in TennisGame::get_score
+src/tennis_scoring.rs:40:29: replace > with == in TennisGame::get_score
+src/tennis_scoring.rs:33:9: replace TennisGame::get_score -> String with String::new()
+src/tennis_scoring.rs:34:29: replace > with == in TennisGame::get_score
+src/tennis_scoring.rs:40:64: replace + with * in TennisGame::get_score
+src/tennis_scoring.rs:40:48: replace >= with < in TennisGame::get_score
+src/tennis_scoring.rs:49:50: replace + with - in TennisGame::get_score
+src/tennis_scoring.rs:49:35: replace == with != in TennisGame::get_score
+src/tennis_scoring.rs:49:50: replace + with * in TennisGame::get_score
+src/tennis_scoring.rs:39:30: replace && with || in TennisGame::get_score
+src/tennis_scoring.rs:34:29: replace > with < in TennisGame::get_score
+src/tennis_scoring.rs:33:25: replace == with != in TennisGame::get_score
+src/tennis_scoring.rs:46:44: replace >= with < in TennisGame::get_score
+src/tennis_scoring.rs:34:64: replace + with - in TennisGame::get_score
+src/tennis_scoring.rs:39:25: replace == with != in TennisGame::get_score
+src/tennis_scoring.rs:34:48: replace >= with < in TennisGame::get_score
+src/tennis_scoring.rs:25:9: replace TennisGame::set_score -> &mut Self with Box::leak(Box::new(Default::default()))
+src/tennis_scoring.rs:34:13: replace || with && in TennisGame::get_score
+src/tennis_scoring.rs:46:24: replace >= with < in TennisGame::get_score
+src/tennis_scoring.rs:20:9: replace TennisGame::set_names with ()
+src/tennis_scoring.rs:33:45: replace <= with > in TennisGame::get_score
+src/tennis_scoring.rs:57:28: replace > with < in TennisGame::get_score
+src/tennis_scoring.rs:47:43: replace + with - in TennisGame::get_score
+src/tennis_scoring.rs:47:28: replace == with != in TennisGame::get_score
+src/tennis_scoring.rs:34:33: replace && with || in TennisGame::get_score
+src/tennis_scoring.rs:39:45: replace <= with > in TennisGame::get_score
+src/tennis_scoring.rs:57:28: replace > with == in TennisGame::get_score
+src/tennis_scoring.rs:40:13: replace || with && in TennisGame::get_score
+src/tennis_scoring.rs:33:9: replace TennisGame::get_score -> String with "xyzzy".into()
+src/tennis_scoring.rs:47:43: replace + with * in TennisGame::get_score
+src/tennis_scoring.rs:40:33: replace && with || in TennisGame::get_score
+src/tennis_scoring.rs:34:64: replace + with * in TennisGame::get_score
+src/tennis_scoring.rs:56:24: replace == with != in TennisGame::get_score
+src/tennis_scoring.rs:40:64: replace + with - in TennisGame::get_score
+src/tennis_scoring.rs:33:30: replace && with || in TennisGame::get_score

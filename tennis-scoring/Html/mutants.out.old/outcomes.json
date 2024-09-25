@@ -1,0 +1,2508 @@
+{
+  "outcomes": [
+    {
+      "scenario": "Baseline",
+      "log_path": "Html/mutants.out/log/baseline.log",
+      "summary": "Success",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 39.867630167,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.4873005,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 46,
+              "column": 29
+            },
+            "end": {
+              "line": 46,
+              "column": 31
+            }
+          },
+          "replacement": "||",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_46_col_29.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327871708,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.376309834,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 29
+            },
+            "end": {
+              "line": 40,
+              "column": 30
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_29.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327471,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.383540125,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 29
+            },
+            "end": {
+              "line": 40,
+              "column": 30
+            }
+          },
+          "replacement": "==",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_29_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.322889292,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.374307,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 33,
+              "column": 9
+            },
+            "end": {
+              "line": 68,
+              "column": 51
+            }
+          },
+          "replacement": "String::new()",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_33_col_9.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.902384167,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.502834125,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 29
+            },
+            "end": {
+              "line": 34,
+              "column": 30
+            }
+          },
+          "replacement": "==",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_29.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.328471542,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.38150575,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/main.rs",
+          "function": {
+            "function_name": "main",
+            "return_type": "",
+            "span": {
+              "start": {
+                "line": 1,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 2
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 2,
+              "column": 5
+            },
+            "end": {
+              "line": 2,
+              "column": 31
+            }
+          },
+          "replacement": "()",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__main.rs_line_2_col_5.log",
+      "summary": "MissedMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327275208,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.376652458,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 64
+            },
+            "end": {
+              "line": 40,
+              "column": 65
+            }
+          },
+          "replacement": "*",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_64.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.324326875,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.382145458,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 48
+            },
+            "end": {
+              "line": 40,
+              "column": 50
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_48.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.329129459,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.376688375,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 49,
+              "column": 50
+            },
+            "end": {
+              "line": 49,
+              "column": 51
+            }
+          },
+          "replacement": "-",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_49_col_50.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.324534208,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.382173208,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 49,
+              "column": 35
+            },
+            "end": {
+              "line": 49,
+              "column": 37
+            }
+          },
+          "replacement": "!=",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_49_col_35.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.32477725,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.381307875,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 49,
+              "column": 50
+            },
+            "end": {
+              "line": 49,
+              "column": 51
+            }
+          },
+          "replacement": "*",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_49_col_50_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.3260675,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.378097792,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 39,
+              "column": 30
+            },
+            "end": {
+              "line": 39,
+              "column": 32
+            }
+          },
+          "replacement": "||",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_39_col_30.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.328495875,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.379030041,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 29
+            },
+            "end": {
+              "line": 34,
+              "column": 30
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_29_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.328815167,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.375348417,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 33,
+              "column": 25
+            },
+            "end": {
+              "line": 33,
+              "column": 27
+            }
+          },
+          "replacement": "!=",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_33_col_25.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327716084,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.383036042,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 46,
+              "column": 44
+            },
+            "end": {
+              "line": 46,
+              "column": 46
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_46_col_44.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.32877675,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.374353458,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 64
+            },
+            "end": {
+              "line": 34,
+              "column": 65
+            }
+          },
+          "replacement": "-",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_64.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327098,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.382701541,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 39,
+              "column": 25
+            },
+            "end": {
+              "line": 39,
+              "column": 27
+            }
+          },
+          "replacement": "!=",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_39_col_25.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.330171709,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.385033291,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 48
+            },
+            "end": {
+              "line": 34,
+              "column": 50
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_48.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.329933,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.382937208,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::set_score",
+            "return_type": "-> &mut Self",
+            "span": {
+              "start": {
+                "line": 24,
+                "column": 5
+              },
+              "end": {
+                "line": 29,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 25,
+              "column": 9
+            },
+            "end": {
+              "line": 28,
+              "column": 21
+            }
+          },
+          "replacement": "Box::leak(Box::new(Default::default()))",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_25_col_9.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.3251915,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.378160583,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 13
+            },
+            "end": {
+              "line": 34,
+              "column": 15
+            }
+          },
+          "replacement": "&&",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_13.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.325546167,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.3808995,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 46,
+              "column": 24
+            },
+            "end": {
+              "line": 46,
+              "column": 26
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_46_col_24.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.322317667,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.375052583,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::set_names",
+            "return_type": "",
+            "span": {
+              "start": {
+                "line": 19,
+                "column": 5
+              },
+              "end": {
+                "line": 22,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 20,
+              "column": 9
+            },
+            "end": {
+              "line": 21,
+              "column": 42
+            }
+          },
+          "replacement": "()",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_20_col_9.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.325011208,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.37860575,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 33,
+              "column": 45
+            },
+            "end": {
+              "line": 33,
+              "column": 47
+            }
+          },
+          "replacement": ">",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_33_col_45.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.328862916,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.38348125,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 57,
+              "column": 28
+            },
+            "end": {
+              "line": 57,
+              "column": 29
+            }
+          },
+          "replacement": "<",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_57_col_28.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.32769525,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.377626916,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 47,
+              "column": 43
+            },
+            "end": {
+              "line": 47,
+              "column": 44
+            }
+          },
+          "replacement": "-",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_47_col_43.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.331093209,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.379255041,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 47,
+              "column": 28
+            },
+            "end": {
+              "line": 47,
+              "column": 30
+            }
+          },
+          "replacement": "!=",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_47_col_28.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.3219055,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.381628334,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 33
+            },
+            "end": {
+              "line": 34,
+              "column": 35
+            }
+          },
+          "replacement": "||",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_33.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.315026625,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.378684833,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 39,
+              "column": 45
+            },
+            "end": {
+              "line": 39,
+              "column": 47
+            }
+          },
+          "replacement": ">",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_39_col_45.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.329395667,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.371050667,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 57,
+              "column": 28
+            },
+            "end": {
+              "line": 57,
+              "column": 29
+            }
+          },
+          "replacement": "==",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_57_col_28_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.325255375,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.375796375,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring_tests.rs",
+          "function": {
+            "function_name": "check_score",
+            "return_type": "",
+            "span": {
+              "start": {
+                "line": 29,
+                "column": 1
+              },
+              "end": {
+                "line": 81,
+                "column": 2
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 75,
+              "column": 5
+            },
+            "end": {
+              "line": 80,
+              "column": 51
+            }
+          },
+          "replacement": "()",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring_tests.rs_line_75_col_5.log",
+      "summary": "MissedMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.325380792,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.3794885,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 13
+            },
+            "end": {
+              "line": 40,
+              "column": 15
+            }
+          },
+          "replacement": "&&",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_13.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.320022208,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.379181167,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 33,
+              "column": 9
+            },
+            "end": {
+              "line": 68,
+              "column": 51
+            }
+          },
+          "replacement": "\"xyzzy\".into()",
+          "genre": "FnValue"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_33_col_9_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.331921959,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.377541875,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 47,
+              "column": 43
+            },
+            "end": {
+              "line": 47,
+              "column": 44
+            }
+          },
+          "replacement": "*",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_47_col_43_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.328876541,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.378225333,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 33
+            },
+            "end": {
+              "line": 40,
+              "column": 35
+            }
+          },
+          "replacement": "||",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_33.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.326813125,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.377235042,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 34,
+              "column": 64
+            },
+            "end": {
+              "line": 34,
+              "column": 65
+            }
+          },
+          "replacement": "*",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_34_col_64_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.331817375,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.378522125,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 56,
+              "column": 24
+            },
+            "end": {
+              "line": 56,
+              "column": 26
+            }
+          },
+          "replacement": "!=",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_56_col_24.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.334054334,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.377979416,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 40,
+              "column": 64
+            },
+            "end": {
+              "line": 40,
+              "column": 65
+            }
+          },
+          "replacement": "-",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_40_col_64_001.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.331104791,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.381546125,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "Mutant": {
+          "package": "tennis-scoring",
+          "file": "src/tennis_scoring.rs",
+          "function": {
+            "function_name": "TennisGame::get_score",
+            "return_type": "-> String",
+            "span": {
+              "start": {
+                "line": 31,
+                "column": 5
+              },
+              "end": {
+                "line": 69,
+                "column": 6
+              }
+            }
+          },
+          "span": {
+            "start": {
+              "line": 33,
+              "column": 30
+            },
+            "end": {
+              "line": 33,
+              "column": 32
+            }
+          },
+          "replacement": "||",
+          "genre": "BinaryOperator"
+        }
+      },
+      "log_path": "Html/mutants.out/log/src__tennis_scoring.rs_line_33_col_30.log",
+      "summary": "CaughtMutant",
+      "phase_results": [
+        {
+          "phase": "Build",
+          "duration": 0.327396708,
+          "process_status": "Success",
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--no-run",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        },
+        {
+          "phase": "Test",
+          "duration": 0.383042708,
+          "process_status": {
+            "Failure": 101
+          },
+          "argv": [
+            "/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo",
+            "test",
+            "--verbose",
+            "--manifest-path",
+            "/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml"
+          ]
+        }
+      ]
+    }
+  ],
+  "total_mutants": 38,
+  "missed": 2,
+  "caught": 36,
+  "timeout": 0,
+  "unviable": 0,
+  "success": 0
+}

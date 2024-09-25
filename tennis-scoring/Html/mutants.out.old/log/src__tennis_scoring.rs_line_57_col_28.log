@@ -1,0 +1,488 @@
+
+*** src/tennis_scoring.rs:57:28: replace > with < in TennisGame::get_score
+
+*** mutation diff:
+--- src/tennis_scoring.rs
++++ replace > with < in TennisGame::get_score
+@@ -49,17 +49,17 @@
+             } else if self.score2 == self.score1 + 1 {
+                 return format!("Advantage {}", self.player2_name);
+             }
+         }
+ 
+         
+         // Tie Situation
+         if self.score1 == self.score2 {
+-            if self.score1 > 2 {
++            if self.score1 < /* ~ changed by cargo-mutants ~ */ 2 {
+                 return "Deuce".to_string();
+             }
+ 
+             let score1_name = SCORE_NAMES.get(self.score1 as usize).unwrap();
+             return format!("{}-All", score1_name);
+         }
+ 
+         // Default Situation
+
+
+*** /Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo test --no-run --verbose --manifest-path /var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml
+       Fresh unicode-ident v1.0.13
+       Fresh autocfg v1.3.0
+       Fresh cfg-if v1.0.0
+       Fresh pin-project-lite v0.2.14
+       Fresh shlex v1.3.0
+       Fresh once_cell v1.19.0
+       Fresh core-foundation-sys v0.8.7
+       Fresh equivalent v1.0.1
+       Fresh pkg-config v0.3.31
+       Fresh hashbrown v0.14.5
+       Fresh libc v0.2.159
+       Fresh indexmap v2.5.0
+       Fresh futures-sink v0.3.30
+       Fresh vcpkg v0.2.15
+       Fresh futures-core v0.3.30
+       Fresh itoa v1.0.11
+       Fresh jobserver v0.1.32
+       Fresh bytes v1.7.2
+       Fresh futures-channel v0.3.30
+       Fresh tracing-core v0.1.32
+       Fresh futures-task v0.3.30
+       Fresh bitflags v2.6.0
+       Fresh pin-utils v0.1.0
+       Fresh cc v1.1.21
+       Fresh slab v0.4.9
+       Fresh futures-io v0.3.30
+       Fresh socket2 v0.5.7
+       Fresh mio v1.0.2
+       Fresh version_check v0.9.5
+       Fresh serde_derive v1.0.210
+       Fresh futures-macro v0.3.30
+       Fresh tracing-attributes v0.1.27
+       Fresh tokio v1.40.0
+       Fresh serde v1.0.210
+       Fresh futures-util v0.3.30
+       Fresh tracing v0.1.40
+       Fresh core-foundation v0.9.4
+       Fresh errno v0.3.9
+       Fresh crc32fast v1.4.2
+       Fresh regex-syntax v0.8.4
+       Fresh fnv v1.0.7
+       Fresh tinyvec_macros v0.1.1
+       Fresh rustix v0.38.37
+       Fresh rustc_version v0.4.1
+       Fresh http v0.2.12
+       Fresh security-framework-sys v2.12.0
+       Fresh tinyvec v1.8.0
+       Fresh winnow v0.6.20
+       Fresh fastrand v2.1.1
+       Fresh percent-encoding v2.3.1
+       Fresh unicase v2.7.0
+       Fresh security-framework v2.11.1
+       Fresh tokio-util v0.7.12
+       Fresh form_urlencoded v1.2.1
+       Fresh tempfile v3.12.0
+       Fresh unicode-normalization v0.1.24
+       Fresh try-lock v0.2.5
+       Fresh ryu v1.0.18
+       Fresh log v0.4.22
+       Fresh unicode-bidi v0.3.15
+       Fresh adler2 v2.0.0
+       Fresh native-tls v0.2.12
+       Fresh idna v0.5.0
+       Fresh want v0.3.1
+       Fresh httparse v1.9.4
+       Fresh h2 v0.3.26
+       Fresh miniz_oxide v0.8.0
+       Fresh http-body v0.4.6
+       Fresh tower-service v0.3.3
+       Fresh httpdate v1.0.3
+       Fresh memchr v2.7.4
+       Fresh utf8parse v0.2.2
+       Fresh flate2 v1.0.33
+       Fresh system-configuration-sys v0.5.0
+       Fresh hyper v0.14.30
+       Fresh anstyle-parse v0.2.5
+       Fresh url v2.5.2
+       Fresh tokio-native-tls v0.3.1
+       Fresh libz-sys v1.1.20
+       Fresh openssl-sys v0.9.103
+       Fresh thiserror-impl v1.0.64
+       Fresh aho-corasick v1.1.3
+       Fresh regex-syntax v0.6.29
+       Fresh bitflags v1.3.2
+       Fresh base64 v0.21.7
+       Fresh mime v0.3.17
+       Fresh colorchoice v1.0.2
+       Fresh static_assertions v1.1.0
+       Fresh anstyle v1.0.8
+       Fresh is_terminal_polyfill v1.70.1
+       Fresh anstyle-query v1.1.1
+       Fresh regex-automata v0.1.10
+       Fresh system-configuration v0.5.1
+       Fresh twox-hash v1.6.3
+       Fresh anstream v0.6.15
+       Fresh mime_guess v2.0.5
+       Fresh rustls-pemfile v1.0.4
+       Fresh hyper-tls v0.5.0
+       Fresh thiserror v1.0.64
+       Fresh libssh2-sys v0.3.0
+       Fresh serde_json v1.0.128
+       Fresh proc-macro2 v1.0.86
+       Fresh regex-automata v0.4.7
+       Fresh num-traits v0.2.19
+       Fresh serde_urlencoded v0.7.1
+       Fresh serde_spanned v0.6.7
+       Fresh gzip-header v1.0.0
+       Fresh toml_datetime v0.6.8
+       Fresh iana-time-zone v0.1.61
+       Fresh encoding_rs v0.8.34
+       Fresh heck v0.5.0
+       Fresh glob v0.3.1
+       Fresh clap_lex v0.7.2
+       Fresh ipnet v2.10.0
+       Fresh lazy_static v1.5.0
+       Fresh adler32 v1.2.0
+       Fresh overload v0.1.1
+       Fresh strsim v0.11.1
+       Fresh md5 v0.7.0
+       Fresh sync_wrapper v0.1.2
+       Fresh hashbrown v0.11.2
+       Fresh minimal-lexical v0.2.1
+       Fresh nu-ansi-term v0.46.0
+       Fresh indexmap v1.8.2
+       Fresh reqwest v0.11.27
+       Fresh deflate v1.0.0
+       Fresh sharded-slab v0.1.7
+       Fresh clap_builder v4.5.18
+       Fresh clap_derive v4.5.18
+       Fresh nom v7.1.3
+       Fresh toml_edit v0.22.22
+       Fresh chrono v0.4.38
+       Fresh libgit2-sys v0.17.0+1.8.1
+       Fresh quote v1.0.37
+       Fresh semver v1.0.23
+       Fresh camino v1.1.9
+       Fresh proc-macro-crate v3.2.0
+       Fresh ruzstd v0.7.2
+       Fresh anyhow v1.0.89
+       Fresh matchers v0.1.0
+       Fresh regex v1.10.6
+       Fresh object v0.26.2
+       Fresh tracing-log v0.2.0
+       Fresh cargo-platform v0.1.8
+       Fresh futures-executor v0.3.30
+       Fresh thread_local v1.1.8
+       Fresh smallvec v1.13.2
+       Fresh leb128 v0.2.5
+       Fresh fallible-iterator v0.3.0
+       Fresh same-file v1.0.6
+       Fresh rustc-hash v1.1.0
+       Fresh relative-path v1.9.3
+       Fresh humantime v2.1.0
+       Fresh stable_deref_trait v1.2.0
+       Fresh tracing-subscriber v0.3.18
+       Fresh futures v0.3.30
+       Fresh rstest_macros v0.22.0
+       Fresh humantime-serde v1.1.1
+       Fresh llvm_profparser v0.7.0
+       Fresh walkdir v2.5.0
+       Fresh object v0.36.4
+       Fresh cargo_metadata v0.18.1
+       Fresh gimli v0.31.0
+       Fresh syn v2.0.77
+       Fresh toml v0.8.19
+       Fresh git2 v0.19.0
+       Fresh clap v4.5.18
+       Fresh coveralls-api v0.6.0
+       Fresh num_cpus v1.16.0
+       Fresh quick-xml v0.36.2
+       Fresh futures-timer v3.0.3
+       Fresh rustc-demangle v0.1.24
+       Fresh rstest v0.22.0
+       Fresh cargo-tarpaulin v0.31.2
+       Dirty tennis-scoring v0.1.0 (/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp): the file `src/tennis_scoring.rs` has changed (1727290635.450401884s, 1s after last build at 1727290634.880997382s)
+   Compiling tennis-scoring v0.1.0 (/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp)
+     Running `/Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc --crate-name tennis_scoring --edition=2021 src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 -C split-debuginfo=unpacked --test --check-cfg 'cfg(docsrs)' --check-cfg 'cfg(feature, values())' -C metadata=87a8dbdcbff83164 -C extra-filename=-87a8dbdcbff83164 --out-dir /var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps -C incremental=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/incremental -L dependency=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps --extern cargo_tarpaulin=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps/libcargo_tarpaulin-5f2f1e14148c8d5d.rlib --extern rstest=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps/librstest-23d0f13d87947e20.rlib -L native=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/build/libgit2-sys-c7620aa0ca38e862/out/build -L native=/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/build/libssh2-sys-a6f1cc50d5270c6f/out/build -L 'native=/opt/homebrew/opt/openssl@3/lib'`
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.26s
+  Executable `/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps/tennis_scoring-87a8dbdcbff83164`
+
+*** result: Success
+
+*** /Users/jim/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo test --verbose --manifest-path /var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/Cargo.toml
+       Fresh unicode-ident v1.0.13
+       Fresh autocfg v1.3.0
+       Fresh cfg-if v1.0.0
+       Fresh pin-project-lite v0.2.14
+       Fresh once_cell v1.19.0
+       Fresh shlex v1.3.0
+       Fresh hashbrown v0.14.5
+       Fresh core-foundation-sys v0.8.7
+       Fresh pkg-config v0.3.31
+       Fresh equivalent v1.0.1
+       Fresh libc v0.2.159
+       Fresh indexmap v2.5.0
+       Fresh futures-sink v0.3.30
+       Fresh vcpkg v0.2.15
+       Fresh futures-core v0.3.30
+       Fresh bytes v1.7.2
+       Fresh jobserver v0.1.32
+       Fresh itoa v1.0.11
+       Fresh futures-channel v0.3.30
+       Fresh tracing-core v0.1.32
+       Fresh futures-task v0.3.30
+       Fresh bitflags v2.6.0
+       Fresh cc v1.1.21
+       Fresh slab v0.4.9
+       Fresh futures-io v0.3.30
+       Fresh pin-utils v0.1.0
+       Fresh mio v1.0.2
+       Fresh socket2 v0.5.7
+       Fresh version_check v0.9.5
+       Fresh serde_derive v1.0.210
+       Fresh futures-macro v0.3.30
+       Fresh tracing-attributes v0.1.27
+       Fresh tokio v1.40.0
+       Fresh serde v1.0.210
+       Fresh futures-util v0.3.30
+       Fresh tracing v0.1.40
+       Fresh errno v0.3.9
+       Fresh core-foundation v0.9.4
+       Fresh crc32fast v1.4.2
+       Fresh regex-syntax v0.8.4
+       Fresh tinyvec_macros v0.1.1
+       Fresh fnv v1.0.7
+       Fresh tinyvec v1.8.0
+       Fresh rustix v0.38.37
+       Fresh rustc_version v0.4.1
+       Fresh security-framework-sys v2.12.0
+       Fresh winnow v0.6.20
+       Fresh http v0.2.12
+       Fresh fastrand v2.1.1
+       Fresh percent-encoding v2.3.1
+       Fresh unicase v2.7.0
+       Fresh unicode-normalization v0.1.24
+       Fresh security-framework v2.11.1
+       Fresh tokio-util v0.7.12
+       Fresh tempfile v3.12.0
+       Fresh form_urlencoded v1.2.1
+       Fresh adler2 v2.0.0
+       Fresh log v0.4.22
+       Fresh unicode-bidi v0.3.15
+       Fresh try-lock v0.2.5
+       Fresh ryu v1.0.18
+       Fresh httparse v1.9.4
+       Fresh miniz_oxide v0.8.0
+       Fresh idna v0.5.0
+       Fresh native-tls v0.2.12
+       Fresh want v0.3.1
+       Fresh h2 v0.3.26
+       Fresh http-body v0.4.6
+       Fresh tower-service v0.3.3
+       Fresh memchr v2.7.4
+       Fresh httpdate v1.0.3
+       Fresh utf8parse v0.2.2
+       Fresh hyper v0.14.30
+       Fresh system-configuration-sys v0.5.0
+       Fresh url v2.5.2
+       Fresh anstyle-parse v0.2.5
+       Fresh flate2 v1.0.33
+       Fresh tokio-native-tls v0.3.1
+       Fresh openssl-sys v0.9.103
+       Fresh libz-sys v1.1.20
+       Fresh thiserror-impl v1.0.64
+       Fresh aho-corasick v1.1.3
+       Fresh static_assertions v1.1.0
+       Fresh colorchoice v1.0.2
+       Fresh is_terminal_polyfill v1.70.1
+       Fresh anstyle-query v1.1.1
+       Fresh anstyle v1.0.8
+       Fresh base64 v0.21.7
+       Fresh bitflags v1.3.2
+       Fresh regex-syntax v0.6.29
+       Fresh mime v0.3.17
+       Fresh regex-automata v0.1.10
+       Fresh rustls-pemfile v1.0.4
+       Fresh mime_guess v2.0.5
+       Fresh system-configuration v0.5.1
+       Fresh anstream v0.6.15
+       Fresh twox-hash v1.6.3
+       Fresh proc-macro2 v1.0.86
+       Fresh libssh2-sys v0.3.0
+       Fresh hyper-tls v0.5.0
+       Fresh thiserror v1.0.64
+       Fresh regex-automata v0.4.7
+       Fresh serde_json v1.0.128
+       Fresh num-traits v0.2.19
+       Fresh serde_urlencoded v0.7.1
+       Fresh serde_spanned v0.6.7
+       Fresh gzip-header v1.0.0
+       Fresh toml_datetime v0.6.8
+       Fresh iana-time-zone v0.1.61
+       Fresh encoding_rs v0.8.34
+       Fresh minimal-lexical v0.2.1
+       Fresh lazy_static v1.5.0
+       Fresh glob v0.3.1
+       Fresh clap_lex v0.7.2
+       Fresh ipnet v2.10.0
+       Fresh overload v0.1.1
+       Fresh hashbrown v0.11.2
+       Fresh strsim v0.11.1
+       Fresh md5 v0.7.0
+       Fresh heck v0.5.0
+       Fresh sync_wrapper v0.1.2
+       Fresh adler32 v1.2.0
+       Fresh clap_derive v4.5.18
+       Fresh nu-ansi-term v0.46.0
+       Fresh reqwest v0.11.27
+       Fresh indexmap v1.8.2
+       Fresh clap_builder v4.5.18
+       Fresh chrono v0.4.38
+       Fresh sharded-slab v0.1.7
+       Fresh deflate v1.0.0
+       Fresh nom v7.1.3
+       Fresh toml_edit v0.22.22
+       Fresh libgit2-sys v0.17.0+1.8.1
+       Fresh quote v1.0.37
+       Fresh semver v1.0.23
+       Fresh anyhow v1.0.89
+       Fresh ruzstd v0.7.2
+       Fresh camino v1.1.9
+       Fresh matchers v0.1.0
+       Fresh regex v1.10.6
+       Fresh proc-macro-crate v3.2.0
+       Fresh object v0.26.2
+       Fresh tracing-log v0.2.0
+       Fresh futures-executor v0.3.30
+       Fresh cargo-platform v0.1.8
+       Fresh thread_local v1.1.8
+       Fresh leb128 v0.2.5
+       Fresh stable_deref_trait v1.2.0
+       Fresh smallvec v1.13.2
+       Fresh rustc-hash v1.1.0
+       Fresh relative-path v1.9.3
+       Fresh humantime v2.1.0
+       Fresh fallible-iterator v0.3.0
+       Fresh same-file v1.0.6
+       Fresh rstest_macros v0.22.0
+       Fresh cargo_metadata v0.18.1
+       Fresh gimli v0.31.0
+       Fresh humantime-serde v1.1.1
+       Fresh tracing-subscriber v0.3.18
+       Fresh llvm_profparser v0.7.0
+       Fresh futures v0.3.30
+       Fresh walkdir v2.5.0
+       Fresh object v0.36.4
+       Fresh syn v2.0.77
+       Fresh toml v0.8.19
+       Fresh git2 v0.19.0
+       Fresh coveralls-api v0.6.0
+       Fresh clap v4.5.18
+       Fresh num_cpus v1.16.0
+       Fresh quick-xml v0.36.2
+       Fresh futures-timer v3.0.3
+       Fresh rustc-demangle v0.1.24
+       Fresh rstest v0.22.0
+       Fresh cargo-tarpaulin v0.31.2
+       Fresh tennis-scoring v0.1.0 (/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.09s
+     Running `/var/folders/sf/j3mytcq55_n2jtvxxnnkz2w40000gn/T/cargo-mutants-tennis-scoring-JOIhTk.tmp/target/debug/deps/tennis_scoring-87a8dbdcbff83164`
+
+running 47 tests
+test tennis_scoring_tests::check_score::case_03 ... ok
+test tennis_scoring_tests::check_score::case_04 ... ok
+test tennis_scoring_tests::check_score::case_05 ... ok
+test tennis_scoring_tests::check_score::case_02 ... FAILED
+test tennis_scoring_tests::check_score::case_01 ... FAILED
+test tennis_scoring_tests::check_score::case_06 ... ok
+test tennis_scoring_tests::check_score::case_07 ... ok
+test tennis_scoring_tests::check_score::case_08 ... ok
+test tennis_scoring_tests::check_score::case_09 ... ok
+test tennis_scoring_tests::check_score::case_10 ... ok
+test tennis_scoring_tests::check_score::case_11 ... ok
+test tennis_scoring_tests::check_score::case_12 ... ok
+test tennis_scoring_tests::check_score::case_13 ... ok
+test tennis_scoring_tests::check_score::case_14 ... ok
+test tennis_scoring_tests::check_score::case_15 ... ok
+test tennis_scoring_tests::check_score::case_16 ... ok
+test tennis_scoring_tests::check_score::case_17 ... ok
+test tennis_scoring_tests::check_score::case_18 ... ok
+test tennis_scoring_tests::check_score::case_19 ... ok
+test tennis_scoring_tests::check_score::case_20 ... ok
+test tennis_scoring_tests::check_score::case_21 ... ok
+test tennis_scoring_tests::check_score::case_22 ... ok
+test tennis_scoring_tests::check_score::case_23 ... ok
+test tennis_scoring_tests::check_score::case_24 ... ok
+test tennis_scoring_tests::check_score::case_25 ... ok
+test tennis_scoring_tests::check_score::case_26 ... ok
+test tennis_scoring_tests::check_score::case_27 ... ok
+test tennis_scoring_tests::check_score::case_28 ... ok
+test tennis_scoring_tests::check_score::case_29 ... ok
+test tennis_scoring_tests::check_score::case_30 ... ok
+test tennis_scoring_tests::check_score::case_31 ... ok
+test tennis_scoring_tests::check_score::case_32 ... ok
+test tennis_scoring_tests::check_score::case_33 ... ok
+test tennis_scoring_tests::check_score::case_34 ... ok
+test tennis_scoring_tests::check_score::case_35 ... ok
+test tennis_scoring_tests::check_score::case_36 ... ok
+test tennis_scoring_tests::check_score::case_37 ... ok
+test tennis_scoring_tests::check_score::case_38 ... ok
+test tennis_scoring_tests::check_score::case_39 ... ok
+test tennis_scoring_tests::check_score::case_40 ... FAILED
+test tennis_scoring_tests::check_score::case_41 ... FAILED
+test tennis_scoring_tests::check_score::case_42 ... FAILED
+test tennis_scoring_tests::check_score::case_43 ... FAILED
+test tennis_scoring_tests::test_defaults ... ok
+test tennis_scoring_tests::check_score::case_44 ... FAILED
+test tennis_scoring_tests::test_sets_names ... ok
+test tennis_scoring_tests::test_sets_score ... ok
+
+failures:
+
+---- tennis_scoring_tests::check_score::case_02 stdout ----
+thread 'tennis_scoring_tests::check_score::case_02' panicked at src/tennis_scoring_tests.rs:80:5:
+assertion `left == right` failed
+  left: "Deuce"
+ right: "Fifteen-All"
+
+---- tennis_scoring_tests::check_score::case_01 stdout ----
+thread 'tennis_scoring_tests::check_score::case_01' panicked at src/tennis_scoring_tests.rs:80:5:
+assertion `left == right` failed
+  left: "Deuce"
+ right: "Love-All"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- tennis_scoring_tests::check_score::case_40 stdout ----
+thread 'tennis_scoring_tests::check_score::case_40' panicked at src/tennis_scoring.rs:61:69:
+called `Option::unwrap()` on a `None` value
+
+---- tennis_scoring_tests::check_score::case_41 stdout ----
+thread 'tennis_scoring_tests::check_score::case_41' panicked at src/tennis_scoring.rs:61:69:
+called `Option::unwrap()` on a `None` value
+
+---- tennis_scoring_tests::check_score::case_42 stdout ----
+thread 'tennis_scoring_tests::check_score::case_42' panicked at src/tennis_scoring.rs:61:69:
+called `Option::unwrap()` on a `None` value
+
+---- tennis_scoring_tests::check_score::case_43 stdout ----
+thread 'tennis_scoring_tests::check_score::case_43' panicked at src/tennis_scoring.rs:61:69:
+called `Option::unwrap()` on a `None` value
+
+---- tennis_scoring_tests::check_score::case_44 stdout ----
+thread 'tennis_scoring_tests::check_score::case_44' panicked at src/tennis_scoring.rs:61:69:
+called `Option::unwrap()` on a `None` value
+
+
+failures:
+    tennis_scoring_tests::check_score::case_01
+    tennis_scoring_tests::check_score::case_02
+    tennis_scoring_tests::check_score::case_40
+    tennis_scoring_tests::check_score::case_41
+    tennis_scoring_tests::check_score::case_42
+    tennis_scoring_tests::check_score::case_43
+    tennis_scoring_tests::check_score::case_44
+
+test result: FAILED. 40 passed; 7 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `--bin tennis-scoring`
+
+*** result: Failure(101)

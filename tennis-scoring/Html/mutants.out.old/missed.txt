@@ -1,0 +1,2 @@
+src/main.rs:2:5: replace main with ()
+src/tennis_scoring_tests.rs:75:5: replace check_score with ()
